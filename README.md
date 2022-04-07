@@ -9,13 +9,19 @@ The columns:
 * `Subtitle`
 
 
-    This column contanins information about the type of electic electric vehicle as well as the kWh of the battery. The kWh gives information about the battery capacity of the car.
+    This column contanins information about the type of electic electric vehicle as well as the kWh of the battery. The kWh part of the column gives information about the battery capacity of the car.
 
 * `Acceleration`
 
+    This is the amount of time it takes the car to get to a speed of 100 km/h from 0 km/h.
+
 * `TopSpeed`
 
+    This is the maximum speed the vehicle can travel.
+
 * `Range`
+
+    This is the maximum distance the car can travel on a full charge.
 
 * `Efficiency`
 

@@ -6,8 +6,11 @@ The column `Name` is the name of the vehicle and will not be used in any of the 
 
 The columns:
 
-* `Subtitle`
+* `Name`
 
+    This is the name of the vehicle and will not be used in any of the formulas. However it is helpful as an identifier so will be kept in the data.
+
+* `Subtitle`
 
     This column contanins information about the type of electric vehicle as well as the kWh of the battery. The kWh part of the column gives information about the battery capacity of the car.
 
@@ -21,14 +24,30 @@ The columns:
 
 * `Range`
 
-    This is the maximum distance the car can travel on a full charge.
+    This is the maximum distance the electric vehicle can travel on a full charge.
 
 * `Efficiency`
 
+    This column describes how much energy the electric vehicle has consumed over how many miles.
+
+* `Drive`
+
+    This is the drivetrains category of the electric vehicle.
+
+* `NumberofSeats`
+
+    This is the number of seats in the vehicle.
+
 * `FastChargeSpeed`
 
+    This column gives the amount of distance the electric vehicle can travel when fast-charged for an hour.
+   
 * `PriceinGermany`
+
+    This is the price of the car in Germany.
 
 * `PriceinUK`
 
-All are stored as strings, but clearly contain numeric substrings that may be useful. Some of these strings have the value “-” which indicates a null value. As such, these will be converted to NA.
+    This is the price of the car in the United Kingdom.
+
+Some of these columns are stored as strings, but clearly contain numeric substrings that may be useful. Some of these strings have the value “-” which indicates a null value. As such, these will be converted to `NA` when the numeric parts are parsed out.
